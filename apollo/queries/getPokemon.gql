@@ -1,0 +1,11 @@
+query getPokemon( $id: String!){
+  pokemon(id: $id){
+    name
+    types
+    image
+    evolutions{
+      name
+      image
+    }
+  }
+}
